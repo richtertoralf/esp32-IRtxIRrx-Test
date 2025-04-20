@@ -2,6 +2,10 @@
 Testen der IR-Sende und Empfangsmodule
 Das folgende Sketch sendet IR-Signale über das AZ-Delivery KY-005 Modul und das daneben platzierte KY-022 IR Receiver Modul empfängt die Signale.  
 Dadurch habe ich bemerkt, das die Signale nicht sauber gesendet werden.
+**Ich sende für AI Toggle: 0x6A49, empfange aber 0x492B**
+Auch bei den Signalen für Rechts und Links kommen die Signale nicht sauber an.
+In den Pausen nach den Signalen kann ich mit der original Fernbedienung testen und sehe, das mein Empfänger die Signale richtig empfängt. Demzufolge funktioniert das KY-005 IR Infrared Emmission Sensor Modul nicht korrekt.
+
 
 ```cpp
 #include <IRremote.hpp>
